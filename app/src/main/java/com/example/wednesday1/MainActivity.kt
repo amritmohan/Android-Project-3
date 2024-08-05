@@ -15,6 +15,8 @@ import com.google.firebase.database.FirebaseDatabase
 class MainActivity : AppCompatActivity() {
     lateinit var  username:EditText
     lateinit var password:EditText
+  // lateinit var phone:EditText
+
     lateinit var button:Button
     lateinit var firebaseauth:FirebaseAuth
 
@@ -27,7 +29,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         username=findViewById(R.id.username)
         password=findViewById(R.id.pass)
+       // phone=findViewById(R.id.mobile)
+
         button=findViewById(R.id.button)
+
+
         val hashMap=HashMap<String,String>();
         firebaseDatabase=FirebaseDatabase.getInstance()//method which return object
         databaseref=firebaseDatabase.getReference().child("Users")//url tak pochega aur child node is created
@@ -38,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             firebaseauth=FirebaseAuth.getInstance()
             val email:String=username.text.toString().trim()
             val pwd:String=password.text.toString().trim()
-
+            // val mob:String=phone.text.toString().trim()
 
             hashMap.put("name",email)//python mai dictonary
             hashMap.put("pass",pwd)

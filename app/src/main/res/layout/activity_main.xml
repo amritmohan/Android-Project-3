@@ -43,7 +43,7 @@
 <!--        android:layout_marginLeft="20dp"-->
 <!--        android:layout_marginTop="100dp"-->
 <!--        android:layout_marginRight="20dp"-->
-<!--        android:hint="Enter mobile"-->
+<!--        android:hint="Enter number"-->
 <!--        android:padding="20dp"-->
 <!--        app:layout_constraintLeft_toLeftOf="parent"-->
 <!--        app:layout_constraintRight_toRightOf="parent"-->
